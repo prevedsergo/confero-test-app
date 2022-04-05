@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PinViewController" customModule="TestApp" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="Zxu-u3-Y40" id="kfh-h1-vRA"/>
+                <outlet property="messageLabel" destination="TEZ-cq-Vsf" id="dRd-dy-yVR"/>
+                <outlet property="pinStackView" destination="rms-87-HlX" id="Erx-Rv-etm"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cdT-Y8-oOY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wbW-bJ-4hT" userLabel="Top Container View">
+                    <rect key="frame" x="0.0" y="44" width="414" height="478"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KsH-B9-e7z">
+                            <rect key="frame" x="0.0" y="179" width="414" height="120"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rms-87-HlX" userLabel="Pin Stack View">
+                                    <rect key="frame" x="137" y="100" width="140" height="20"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bDd-Jc-oKi">
+                                            <rect key="frame" x="0.0" y="-3" width="20" height="26"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="23M-BB-slv"/>
+                                                <constraint firstAttribute="width" constant="20" id="kDj-iI-Wvq"/>
+                                            </constraints>
+                                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbT-Gl-GWQ">
+                                            <rect key="frame" x="40" y="-3" width="20" height="26"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="Zuf-7B-vJ5"/>
+                                                <constraint firstAttribute="height" constant="20" id="hu0-dd-dVI"/>
+                                            </constraints>
+                                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hTI-gb-80c">
+                                            <rect key="frame" x="80" y="-3" width="20" height="26"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="Fqf-6v-Tk5"/>
+                                                <constraint firstAttribute="height" constant="20" id="WVg-dA-ljN"/>
+                                            </constraints>
+                                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
+                                        </imageView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0DM-bs-gox">
+                                            <rect key="frame" x="120" y="-3" width="20" height="26"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="20" id="Ym4-gM-4BX"/>
+                                                <constraint firstAttribute="height" constant="20" id="dSZ-fn-coX"/>
+                                            </constraints>
+                                            <imageReference key="image" image="circle" catalog="system" symbolScale="large"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="IOG-BE-diT"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="132" id="YSO-i1-Xe2"/>
+                                    </constraints>
+                                </stackView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter your pass code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEZ-cq-Vsf">
+                                    <rect key="frame" x="20" y="0.0" width="374" height="80"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="rms-87-HlX" secondAttribute="bottom" id="6DS-pR-aK5"/>
+                                <constraint firstAttribute="trailing" secondItem="TEZ-cq-Vsf" secondAttribute="trailing" constant="20" symbolic="YES" id="8CQ-qn-z9Y"/>
+                                <constraint firstItem="TEZ-cq-Vsf" firstAttribute="leading" secondItem="KsH-B9-e7z" secondAttribute="leading" constant="20" symbolic="YES" id="Gjc-3f-7Ms"/>
+                                <constraint firstItem="rms-87-HlX" firstAttribute="top" secondItem="TEZ-cq-Vsf" secondAttribute="bottom" constant="20" id="fnT-O4-6yP"/>
+                                <constraint firstItem="rms-87-HlX" firstAttribute="centerX" secondItem="KsH-B9-e7z" secondAttribute="centerX" id="kuu-6J-Zvp"/>
+                                <constraint firstItem="TEZ-cq-Vsf" firstAttribute="top" secondItem="KsH-B9-e7z" secondAttribute="top" id="tcH-Jm-YNg"/>
+                                <constraint firstAttribute="height" constant="120" id="zHF-Js-J7Y"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KsH-B9-e7z" firstAttribute="centerY" secondItem="wbW-bJ-4hT" secondAttribute="centerY" id="6Nh-3Y-enS"/>
+                        <constraint firstItem="KsH-B9-e7z" firstAttribute="leading" secondItem="wbW-bJ-4hT" secondAttribute="leading" id="SaI-Ft-3qU"/>
+                        <constraint firstAttribute="trailing" secondItem="KsH-B9-e7z" secondAttribute="trailing" id="VPQ-bh-BYt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kkY-b1-JX2" userLabel="Bottom Container View">
+                    <rect key="frame" x="0.0" y="522" width="414" height="340"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="FBt-r6-2U3">
+                            <rect key="frame" x="8" y="0.0" width="398" height="340"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ge-eh-4DB">
+                                    <rect key="frame" x="0.0" y="0.0" width="398" height="71.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jy-JE-32S" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="1">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="RmM-Et-EJg"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fl-nG-fpY" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="136" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="2">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="0F8-h8-WsJ"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csi-g1-X0l" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="272" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="3">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="OnV-Pg-wt8"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yE3-hP-Rpm">
+                                    <rect key="frame" x="0.0" y="89.5" width="398" height="71.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGv-LH-Vqn" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="4">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="Q4t-dN-dfd"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNL-x8-Ds5" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="136" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="5">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="Z2f-1D-Pfq"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39q-IL-Kwc" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="272" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="6">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="bT1-Xb-J1g"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ihn-L9-aCT">
+                                    <rect key="frame" x="0.0" y="179" width="398" height="71.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLM-Rv-wxK" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="7">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="MbO-VU-TXN"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTs-CA-a6C" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="136" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="8">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="Xdf-cg-e9f"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFu-3F-w0R" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="272" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="9">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="iHP-w6-Xv1"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xwf-n8-msm">
+                                    <rect key="frame" x="0.0" y="268.5" width="398" height="71.5"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hay-RS-jQR" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                            <state key="normal">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDe-Ji-uJp" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="136" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                            <state key="normal" title="0">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="digitTouched:" destination="-1" eventType="touchUpInside" id="YdI-kR-TLD"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxu-u3-Y40" userLabel="Delete Button" customClass="PinButton" customModule="TestApp" customModuleProvider="target">
+                                            <rect key="frame" x="272" y="0.0" width="126" height="71.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <state key="normal">
+                                                <color key="titleColor" name="brandDarkTextColor"/>
+                                                <imageReference key="image" image="delete.left" catalog="system" symbolScale="large"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="deleteDigit:" destination="-1" eventType="touchUpInside" id="s3c-X5-tpb"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FBt-r6-2U3" firstAttribute="top" secondItem="kkY-b1-JX2" secondAttribute="top" id="0Jb-f8-xDQ"/>
+                        <constraint firstAttribute="height" constant="340" id="0jl-Jx-wGU"/>
+                        <constraint firstAttribute="trailing" secondItem="FBt-r6-2U3" secondAttribute="trailing" constant="8" id="Mgd-Rw-aRq"/>
+                        <constraint firstItem="FBt-r6-2U3" firstAttribute="leading" secondItem="kkY-b1-JX2" secondAttribute="leading" constant="8" id="Q5y-GQ-2V9"/>
+                        <constraint firstAttribute="bottom" secondItem="FBt-r6-2U3" secondAttribute="bottom" id="SLl-XX-y3b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.37747235267360851" green="0.59081253823708668" blue="0.60209136057381674" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="wbW-bJ-4hT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Jxl-J9-Urb"/>
+                <constraint firstItem="kkY-b1-JX2" firstAttribute="top" secondItem="wbW-bJ-4hT" secondAttribute="bottom" id="VNK-X1-NfM"/>
+                <constraint firstItem="wbW-bJ-4hT" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WbT-Eo-HBU"/>
+                <constraint firstItem="kkY-b1-JX2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b7U-hg-1Sq"/>
+                <constraint firstItem="kkY-b1-JX2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="dNW-wc-xxA"/>
+                <constraint firstItem="wbW-bJ-4hT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="l0b-79-BrL"/>
+                <constraint firstItem="kkY-b1-JX2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pHU-iJ-Toz"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="circle" catalog="system" width="128" height="121"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <namedColor name="brandDarkTextColor">
+            <color red="0.19599999487400055" green="0.22699999809265137" blue="0.28600001335144043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

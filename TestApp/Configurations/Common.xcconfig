@@ -1,0 +1,23 @@
+//
+//  Common.xcconfig
+//  TestApp
+//
+//  Created by Sergey Kononov on 04/04/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+PRODUCT_BUNDLE_IDENTIFIER = com.sergo.testapp
+PRODUCT_NAME = TestApp
+PRODUCT_DISPLAY_NAME = TestApp
+PRODUCT_DISPLAY_VERSION = 0.0.1
+BUILD_VERSION = 1
+TARGETED_DEVICE_FAMILY = 1
+IPHONEOS_DEPLOYMENT_TARGET = 13.0
+
+INFOPLIST_FILE = $(SRCROOT)/TestApp/Configurations/Info.plist
+
+// Signing
+DEVELOPMENT_TEAM=
+CODE_SIGN_STYLE=Manual

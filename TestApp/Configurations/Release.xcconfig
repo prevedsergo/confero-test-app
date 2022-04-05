@@ -1,0 +1,16 @@
+//
+//  Release.xcconfig
+//  TestApp
+//
+//  Created by Sergey Kononov on 05/04/2022.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = $(inherited)
+
+CODE_SIGN_IDENTITY=
+PROVISIONING_PROFILE_SPECIFIER=
